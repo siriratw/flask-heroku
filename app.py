@@ -23,16 +23,11 @@ data = [
 
 @app.route('/')
 def hello():
-    return "Hello สิริรัตน์ ท่าพริก เลขที่ 19 ห้อง4/2" 
+    return "Hello" 
 
 @app.route('/api', methods=['GET'])
 def get_api():
     return jsonify(data)
-
-@app.route('/hi')
-@app.route('/hello')
-daf hi():
-    return"สวัสดี" 
 
 if __name__ == "__main__":
     app.run(debug=False)
